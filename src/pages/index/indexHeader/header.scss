@@ -1,5 +1,56 @@
 .header {
     .header-box {
-        display: flex
+        display: flex;
+        height: 48px;
+        line-height: 48px;
+        background-color: #fff;
+        .header-first {
+            img {
+                width: 64px;
+                height: 14px;
+                margin-left: 17%;
+            }
+        }
+        .header-second {
+            position: relative;
+            margin-left: 4%;
+            margin-top: -1%;
+            p {
+                max-width: 80px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                display: inline-block;
+                vertical-align: middle;
+                font-size: 1rem;
+            }
+            img {
+                position: absolute;
+                top: 43%;
+                left: 97%;
+                width: calc(4vmin);
+            }
+        }
+        .header-three {
+            margin-left: 15%;
+            display: flex;
+            width: 38%;
+            height: 35px;
+            line-height: 35px;
+            margin-top: calc(50px/9);
+            background-color: #F5F5F5;
+            border-radius: 100px;
+            img {
+                width: 14%;
+                height: 57%;
+                margin-top: 5%;
+                margin-left: 10px;
+            }
+            .search {
+                font-size: calc(3vmin + 2px);
+                margin-left: 2px;
+                color: #C6C6C6;
+            }
+        }
     }
 }
