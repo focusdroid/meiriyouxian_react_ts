@@ -1,7 +1,12 @@
 import * as React from 'react'
 
-
-export default class Index extends React.Component{
+interface IProps{
+    name: string;
+}
+export default class Index extends React.Component<IProps>{
+    public constructor(props:IProps){
+        super(props)
+    }
     public render(){
         return(
             <div>
