@@ -3,7 +3,8 @@
     "rules": {
         "ordered-imports": false,
         "jsx-no-lambda": false,
-        "no-console": false
+        "no-console": false,
+        "jsx-self-close": false
     },
     "linterOptions": {
         "exclude": [
