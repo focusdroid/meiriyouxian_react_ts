@@ -4,7 +4,8 @@
         "ordered-imports": false,
         "jsx-no-lambda": false,
         "no-console": false,
-        "jsx-self-close": false
+        "jsx-self-close": false,
+        "allowSyntheticDefaultImports": false
     },
     "linterOptions": {
         "exclude": [
