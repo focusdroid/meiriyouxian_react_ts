@@ -2,7 +2,7 @@
  * @Description: 南宫伯赏
  * @Author: 0.1
  * @Date: 2019-08-19 10:24:39
- * @LastEditTime: 2019-08-23 11:14:46
+ * @LastEditTime: 2019-08-23 15:00:39
  * @LastEditors: Please set LastEditors
  -->
 ## 项目名称
@@ -45,6 +45,14 @@
           "jsx-no-lambda": false // 加入这个，重启服务
         },
       ```
+    > 2. JSX elements with no children must be self-closing (jsx-self-close)
+    > 2.1 在tslint中添加 "jsx-self-close": false 重启即可解决
+    > 2.2 如果标签没有文字或其他内容设置该标签为自闭和，
+    ```
+      "rules": {
+        "jsx-self-close": false // 消除标签自闭和的提示
+      },
+    ```
   ``` 
   ## 安装scss模块
     > yarn add node-sass sass-loader
