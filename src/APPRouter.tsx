@@ -1,5 +1,6 @@
 import * as React from 'react'
-import { BrowserRouter, Route, Switch } from 'react-router-dom'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+
 
 import Admin from './Admin'
 import Test from './components/Test/Test' // 这个一个测试的路由组件
@@ -11,10 +12,11 @@ import Find from './components/find/Find'
 import ShopCar from './components/shopcar/ShopCar';
 import Me from './components/me/Me'
 /*首页底部导航的页面end */
+import Search from './pages/search/Search'
 
-export default class Router extends React.Component{
+export default class APPRouter extends React.Component{
     public render(){
-        return(<BrowserRouter>
+        return(<Router>
                 <Switch>
                     <Route path='/' component={Admin} children={() =>(
                         <Admin>
@@ -25,11 +27,13 @@ export default class Router extends React.Component{
                             <Route path='/me' component={Me}/>
                         </Admin>
                     )}/>
+
                 </Switch>
                 <Switch>
                     <Route path='/test' component={Test}/>
+                    <Route path='/searchs' component={Search}/>
                 </Switch>
-            </BrowserRouter>
+            </Router>
         )
     }
 }
