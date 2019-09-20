@@ -5,7 +5,8 @@
         "jsx-no-lambda": false,
         "no-console": false,
         "jsx-self-close": false,
-        "allowSyntheticDefaultImports": false
+        "allowSyntheticDefaultImports": false,
+        "only-arrow-functions": false
     },
     "linterOptions": {
         "exclude": [

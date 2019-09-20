@@ -1,10 +1,10 @@
 import * as React from 'react'
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
-
+import App from './App'
 
 import Admin from './Admin'
 import Test from './components/Test/Test' // 这个一个测试的路由组件
-
+import './static/icon/iconfont.css'
 /*首页底部导航的页面start */
 import Index from './components/index/Index'
 import Classification from './components/classification/Classification';
@@ -17,8 +17,11 @@ import Search from './pages/search/Search'
 export default class APPRouter extends React.Component{
     public render(){
         return(<Router>
+            <App>
                 <Switch>
-                    <Route path='/' component={Admin} children={() =>(
+                    <Route path='/test' component={Test}/>
+                    <Route path='/searchs' component={Search}/>
+                    <Route render={() =>(
                         <Admin>
                             <Route path='/' exact={true} component={Index}/>
                             <Route path='/classification' component={Classification}/>
@@ -27,12 +30,8 @@ export default class APPRouter extends React.Component{
                             <Route path='/me' component={Me}/>
                         </Admin>
                     )}/>
-
                 </Switch>
-                <Switch>
-                    <Route path='/test' component={Test}/>
-                    <Route path='/searchs' component={Search}/>
-                </Switch>
+            </App>
             </Router>
         )
     }

@@ -70,4 +70,10 @@
       > 重启服务
     ```
 
-  
+## 个别页面的功能
+```
+同意的顶部搜索栏在 src/pages/navBar/searchNavBar/SearchNabBar.tsx
+
+公共样式的顶部返回栏和显示title的在 src/pages/navBar/ordiNavBar/OrdiNavBar.tsx
+这个里面分布是左中右结构的， 左边是返回按钮  中间是标题 右边是一个些功能键，可统一配置，在其他组件引用即可
+```
