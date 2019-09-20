@@ -1,0 +1,36 @@
+.search-result {
+  // 搜索结果回来之前的显示内容start
+  .beforeSearchData {
+    .historySearch {
+      .data-title {
+        font-size: 16px;
+        font-weight: 600;
+        margin: 20px 0 0 10px;
+      }
+      .data-ul {
+        display: flex;
+        flex-wrap: wrap;
+        li {
+          background-color: #ebe5e5;
+          padding: 5px;
+          font-size: 13px;
+          border-radius: 3px;
+          margin-left: 14px;
+          margin-top: 14px;
+        }
+        .active {
+          color: #f30491;
+        }
+      }
+    }
+
+    .hotSearch {}
+  }
+  // 搜索结果回来之前的显示内容end
+
+  // 搜索结果start
+  .afterSearchData {
+
+  }
+  // 搜索结果end
+}

@@ -5,16 +5,14 @@
 * */
 import * as React from 'react';
 import './searchNavBar.scss';
+import { withRouter } from 'react-router-dom';
 
-interface IProps {
-  history?: any
-}
 interface IState {
   searchValue?: any
 }
 
-export default class SearchNavBar extends React.Component<IProps, IState>{
-  constructor(props: IProps) {
+class SearchNavBar extends React.Component<any, IState>{
+  constructor(props: any) {
     super(props)
     this.state = {
       searchValue: ''
@@ -26,7 +24,7 @@ export default class SearchNavBar extends React.Component<IProps, IState>{
         <div className='navbar-box-first'>
           <div className='navbar-left'>
             <div className='icon-back'>
-              <span onClick={this.goBack} className="back iconfont icon-fanhui5"></span>
+              <span onClick={this.goBacks} className="back iconfont icon-fanhui5"></span>
             </div>
           </div>
           <div className='navbar-center'>
@@ -55,11 +53,11 @@ export default class SearchNavBar extends React.Component<IProps, IState>{
       <div className='pt44'></div>
     </div>);
   }
-  public goBack = () => {
+  public goBacks = () => {
     this.props.history.goBack()
   }
   public search = () => {
-    alert('搜索内容为空')
+    alert(`您要搜索的内容是  ${this.state.searchValue}`)
   }
   public deleteValue = () => { // 清空输入框内容
     this.setState(() => ({
@@ -73,3 +71,5 @@ export default class SearchNavBar extends React.Component<IProps, IState>{
     }))
   }
 }
+
+export default withRouter(SearchNavBar)

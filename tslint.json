@@ -6,7 +6,8 @@
         "no-console": false,
         "jsx-self-close": false,
         "allowSyntheticDefaultImports": false,
-        "only-arrow-functions": false
+        "object-literal-sort-keys": false,
+        "no-shadowed-variable": false
     },
     "linterOptions": {
         "exclude": [
