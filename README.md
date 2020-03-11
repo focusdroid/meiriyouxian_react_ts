@@ -6,7 +6,7 @@
  * @LastEditors: Please set LastEditors
  -->
 ## 项目名称
-  > 每日生鲜H5版本 [https://as-vip.missfresh.cn/ug/index.html?referrer=ug&fromSource=zhuye]
+  > 每日优鲜H5版本 [https://as-vip.missfresh.cn/ug/index.html?referrer=ug&fromSource=zhuye]
 ## 项目使用的技术栈
   > React + TS + React-Router + redux + react-redux + fetch&axios实现移动端页面
   > 项目使用TS实现,需要TS基础
