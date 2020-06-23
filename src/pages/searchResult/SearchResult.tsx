@@ -6,7 +6,6 @@ interface IState {
     historyList?: any[]
 }
 
-
 class SearchResult extends React.Component<any, IState>{
     public render(){
         return (<div className='search-result'>

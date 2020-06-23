@@ -5,6 +5,7 @@
  * @LastEditTime: 2019-08-23 15:19:06
  * @LastEditors: Please set LastEditors
  -->
+ > 每日优鲜项目现在已经不能在网页端和模拟器端访问了，所以该项目的素材获取难度增加，项目一度停滞，尽量更新，
 ## 项目名称
   > 每日优鲜H5版本 [https://as-vip.missfresh.cn/ug/index.html?referrer=ug&fromSource=zhuye]
 ## 项目使用的技术栈
